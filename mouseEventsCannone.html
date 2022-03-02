@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseover="m0ver(this)" onmouseout="m0ut (this)" style="background-color: white;width: 120px; height:20px;padding:40px;">
+
+        Mouse Over Me</div>
+    <div onmouseover="m0ver2(this)" onmouseout="m0ut2 (this)" style="background-color: black;width: 120px; height:20px;padding:40px;">
+
+        Mouse Over Me</div>
+
+        <script>
+
+            function m0ver(obj) {
+                obj.style.backgroundColor= "green"
+                }
+            
+            function m0ut (obj) {
+            
+                obj.style.backgroundColor= "white"
+
+            }
+
+            function m0ver2(obj) {
+                obj.style.backgroundColor= "red"
+                }
+            
+            function m0ut2(obj) {
+            
+                obj.style.backgroundColor= "black"
+
+            }
+            
+            </script>
+</body>
+</html>

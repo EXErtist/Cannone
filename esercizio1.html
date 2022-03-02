@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primo Esercizio</title>
+</head>
+<body>
+    
+
+    <!--1) dato l'anno attuale e l'anno di nascita di una persona, 
+        ricavare l'età della persona e gli anni mancanti a raggiungere il 100-esimo anno di età.-->
+
+
+<script>
+     var dataAttuale = new Date(); // crea oggetto di tipo Date
+     var annoAttuale = dataAttuale.getFullYear(); //estrapola anno attuale
+     console.log(annoAttuale);
+     document.write("Siamo nell'anno " + annoAttuale + "<br /><br />");
+
+
+    var annoUtente = prompt("Inserisci il tuo anno di nascita"); //chiede l'inserimento dell'anno di nascita
+    var etaUtente = (annoAttuale - annoUtente); //calcola eta' utente
+    console.log(etaUtente);
+    document.write("Il tuo anno di anno nascita: "+ annoUtente + " ed hai " + etaUtente +" anni.<br /><br />");
+
+    var mancantiCento = (100 - etaUtente); //calcola quanti anni mancano a 100
+    console.log(mancantiCento);
+    document.write("Per raggiungere 100 anni, te ne mancano: " + mancantiCento);
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Radio Buttons</h2>
+
+    <p class="class-test">Choose your favorite Web language:</p>
+    <p>Ciao</p>
+    <p>Mondo</p>
+    <button type="button" onclick="valida()">Valida</button> <input type="text"  id="validaText" name="valida">
+    <form id="form-id" name="form-name">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form> 
+    <p id="paragraph-test"></p>
+    <script>
+        document.write("Hello");
+        document.getElementById("paragraph-test").innerHTML="Hello world";
+        document.getElementsByName("p");
+
+        function valida(){
+     var inputField= document.getElementById("validaText").value;
+     if (inputField>=1 && inputField<=100){
+        document.write("<p id='ciao'> input valido</p>");
+        document.getElementById("ciao").style.color='blue';
+
+
+     }
+     
+     else{
+        document.write("<p id='ciao'> input non valido</p>");
+        document.getElementById("ciao").style.color='red';
+        
+     }
+        
+        }
+        
+
+        
+    </script>
+</body>
+</html>
